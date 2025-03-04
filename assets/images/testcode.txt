@@ -1,0 +1,135 @@
+F6
+-----------------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x,n,number,s=0;
+    printf("Enter number of loop: "); scanf("%d",&x);
+    for(n=1;n<=x;n++){
+    printf("Enter data: "); scanf("%d",&number);
+    s=s+number;
+    }
+    printf("sum of data = %d\n",s);
+    printf("average data = %.2f",(float)s/x);
+    getch();
+}
+------------------------------------------------------------
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{int a,b,x;
+
+    printf("Enter number of loop: "); scanf("%d",&x);
+    for (a=1,b=9;a<=(2*x-1);a=a+2,b--){
+    printf("%d         %d\n",a,b);
+    }
+    getch();
+}
+
+--------------------------------------------------------------
+
+int main()
+{
+    int a, x;
+
+    printf("Enter number: ");
+    scanf("%d", &x);
+
+    for (a = 1; a <= x; a++) {
+        printf("%d", a);
+        if (a < x) {
+            printf(", ");
+        }
+    }
+}
+
+--------------------------------------------------------------
+void main()
+{ int a,b,x;
+
+  printf("Enter number : "); scanf("%d",&x);
+
+  for(a=1;a<=x;a++){
+      if((a%3)==0) printf("%d  ",a);
+
+  }
+
+  getch();
+}
+---------------------------------------------------------------
+
+void main()
+{ int a,b,x;
+
+  printf("Enter number : "); scanf("%d",&x);
+  for (b=1;b<=x;b++){
+  for(a=1;a<=b;a++){
+    printf("%d ",a);
+  }
+  printf("\n");
+  }
+
+
+  getch();
+}
+-------------------------------------------------------------
+For
+void main()
+{
+    int x, y;
+    printf("Enter x: "); scanf("%d", &x);
+    printf("Enter y: "); scanf("%d", &y);
+
+    for (int a = 1; a <= 1; a++) {
+        printf("X power Y = %d\n", (int)pow(x, y));
+    }
+
+    getch();
+}
+
+--------------------------------------------------------------------
+
+void main()
+{
+    int x,y,a=0;
+    printf("Enter x: "); scanf("%d", &x);
+    printf("Enter y: "); scanf("%d", &y);
+    do {
+        printf("X power Y = %d\n", (int)pow(x, y));
+        a = 1;
+    } while (a <= 0);
+    getch();
+}
+------------------------------------------------------------------
+for ไม่ใช้ pow 
+int main() {
+    int x, y,a = 1;
+    printf("Enter x: "); scanf("%d", &x);
+    printf("Enter y: "); scanf("%d", &y);
+    for (int i = 0; i < y; i++) {
+    a = x*a;
+    }
+    printf("X power Y = %d\n", a);
+    return 0;
+}
+------------------------------------------------------------------
+do while ไม่ใช้ POW
+int main() {
+    int x, y, a = 1;
+    printf("Enter x: "); scanf("%d", &x);
+    printf("Enter y: "); scanf("%d", &y);
+
+    int i = 0; // เริ่มต้นค่าของ i ที่ 0
+    do {
+        a = x * a;
+        i++;
+    } while (i < y);
+
+    printf("X power Y = %d\n", a);
+    return 0;
+}
